@@ -1,0 +1,28 @@
+blog/admin/kernel/api/post.class.php:		$post = $this->db->get( array('id'=>$id) );
+blog/admin/kernel/api/post.class.php:		$posts = $this->db->get_list_by_page( array('page_number'=>$page, 'amount'=>$amount) );
+blog/admin/kernel/api/post.class.php:		$posts = $this->db->get_list_by_category( array('id_cat'=>$id_category, 'page_number'=>$page, 'amount'=>$amount) );
+blog/admin/kernel/api/comment.class.php:		$this->comment_settings = $db->get_settings();
+blog/admin/kernel/api/comment.class.php:			$this->db->add($data);
+blog/admin/kernel/api/comment.class.php:		$comment = $this->db->get( array('id'=>$id) );
+blog/admin/kernel/api/comment.class.php:		$comments = $this->db->get_list_by_page( array('page_number'=>$page, 'amount'=>$amount) );
+blog/admin/kernel/api/comment.class.php:		$comments = $this->db->get_list_by_post( array('id_post'=>$id_post) );
+blog/admin/kernel/api/comment.class.php:		$comments = $this->db->get_last( array('amount'=>$amount) );
+blog/admin/kernel/api/comment.class.php:		return($this->db->get_settings());
+blog/admin/kernel/plugin.class.php:		return( (string) $this->db->getChild($name) );
+blog/admin/kernel/plugin.class.php:			$this->db->setChild($field, $value);
+blog/admin/kernel/plugin.class.php:		if( !$this->db->asXml( PATH_PRIVATE.'plugins/'.$this->dir_name.'/db.xml' ) )
+step1.php:foreach($db->query("SELECT * FROM currencies")->fetchAll(PDO::FETCH_ASSOC) as $rate){
+step1.php:$regions = $db->query('SELECT * FROM regions RIGHT JOIN region_entities ON region_id = regions.id')->fetchAll(PDO::FETCH_ASSOC);
+step1.php:		$fees[$phase] = current($db->query("SELECT formula FROM fees WHERE phase = {$phase} AND region_entity_id = {$region['id']}")->fetch(PDO::FETCH_ASSOC));
+step1.php:	$fee_amounts = $db->query("SELECT * FROM fee_amounts WHERE region_entity_id = {$region['id']}")->fetchAll(PDO::FETCH_ASSOC);
+step1.php:		$translation_cost = $db->query("SELECT * FROM translation_cost WHERE patent_lang = '{$order['patent']['language']}' AND region_lang = '{$region['lang']}'")->fetch(PDO::FETCH_ASSOC);
+step2.php:			$query = $db->prepare('SELECT * FROM region_entities WHERE id = ?');
+step3_ajax_check_email.php:$query = $db->prepare('SELECT * FROM users WHERE email = ?');
+step3_ajax_login.php:$query = $db->prepare('SELECT * FROM users WHERE email = ?');
+step4.php:	$query = $db->prepare('SELECT * FROM users WHERE email = ?');
+step4.php:	$insert = $db->prepare("INSERT INTO users ({$fields}) VALUES ({$placeholders})");
+step4.php:	$order['user'] = $db->query('SELECT * FROM users WHERE id = ' . $db->lastInsertId());
+step4.php:$query = $db->prepare('SELECT * FROM currencies WHERE currency = ?');
+step4.php:$insert = $db->prepare('INSERT INTO orders (`user_id`, `patent_identifier`, `patent_name`, `currency`, `exchange_rate`) VALUES (?, ?, ?, ?, ?)');
+step4.php:$order['order'] = $db->query('SELECT * FROM orders WHERE id = ' . $db->lastInsertId());
+step4.php:	$insert = $db->prepare('INSERT INTO order_entries (`order_id`, `region_entity_id`, `fee`) VALUES (?, ?, ?)');

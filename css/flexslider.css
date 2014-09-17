@@ -1,0 +1,100 @@
+/* jQuery FlexSlider v2.0 http://www.woothemes.com/flexslider/ */
+
+.slider {clear:both; display:block; position:relative; z-index:1;}
+ 
+/* Browser Resets */
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus  {outline:none;}
+.slides, .flex-control-nav, .flex-direction-nav {margin:0; padding:0; list-style:none;} 
+
+/* FlexSlider Necessary Styles */ 
+.flexslider {margin:0; padding:0;}
+.flexslider .slides > li {display:none; -webkit-backface-visibility:hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width:100%; display:block; }
+.flex-pauseplay span {text-transform:capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0;} 
+html[xmlns] .slides {display:block;} 
+* html .slides {height:1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display:block;}
+
+/* FlexSlider Default Theme */
+.flexslider {padding:0; background:white; position:relative; z-index:1; zoom:1;}
+.flex-viewport {max-height:2000px; -webkit-transition:all 1s ease; -moz-transition:all 1s ease; transition:all 1s ease;}
+.loading .flex-viewport {max-height:600px;}
+.flexslider .slides {zoom:1;}
+.carousel li {margin-right:5px}
+
+/* Direction Nav */
+.flex-direction-nav {*height:0;}
+.flex-direction-nav a {width:44px; height:44px; margin:0; display:block; background:url(../img/direction_nav.png) no-repeat 0 0; position:absolute; bottom:5%; z-index:10; cursor:pointer; text-indent:-9999px; opacity:0; -webkit-transition:all .3s ease;}
+.flex-direction-nav .flex-next {background-position:0 100%; right:20px; }
+.flex-direction-nav .flex-prev {left:20px;}
+.flexslider:hover .flex-next, .flexslider:hover .flex-prev {opacity:0.5;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity:1;}
+.flex-direction-nav .flex-disabled {opacity:.3!important; filter:alpha(opacity=30); cursor:default;}
+
+/* Control Nav */
+.flex-control-nav {position:absolute; z-index:50; top:10px; right:10px; text-align:center;}
+.flex-control-nav li {margin:0 5px; display:inline-block; zoom:1; *display:inline;}
+.flex-control-paging li a {width:10px; height:10px; display:block; background:#ccc; cursor:pointer; text-indent:-9999px; -webkit-border-radius:20px; -moz-border-radius:20px; -o-border-radius:20px; border-radius:20px; box-shadow:inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover { background:#aaa; }
+.flex-control-paging li a.flex-active { background:#33a66f; cursor:default; }
+
+/* Slide Elements */
+.slides li {position:relative; z-index:2; height:600px; background-repeat:no-repeat; background-position:center bottom; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;}
+.slides li.one {background-image:url(../img/slide1.jpg);}
+.slides li.two {background-image:url(../img/slide1.jpg);}
+
+	.slides .copy {position:absolute; z-index:5; left:0px; top:150px; width:100%}
+	.slides .copy h2 {font-size:325%; line-height:125%; font-weight:300; letter-spacing:-0.02em; margin:0 0 0.1em;}
+		.slides .copy h2 strong {font-weight:600;}
+	
+	/* Patent Number */
+	.patent-number {width:100%; display:block; position:absolute; left:-142px; top:0px; z-index:100}
+	.patent-number form {width:50%; float:left; padding:1em 0; background:rgba(0, 0, 0, 0.15); border-bottom:1px solid rgba(0, 0, 0, 0.3); -webkit-border-radius:4px; border-radius:4px;}
+		.patent-number label {width:30%; float:left; text-align:center; color:#2a3242; font-size:110%; font-weight:600; padding-top:0.75em}
+		.patent-number input[type="text"] {width:48%; float:left; font-weight:400; padding:0.5em; outline:0; margin:0 3px 0 0; border:0; border:1px solid rgba(0, 0, 0, 0.4);  -webkit-border-radius:4px; border-radius:4px; font-size:120%}
+		.patent-number input[type="submit"], .patent-number input.btn, .patent-number a.btn  {width:15%; text-align:center; padding-left:0; padding-right:0; float:left; font-size:140%; margin:0;}
+	
+
+	/* Patent Number */
+	.register-trademark{width:100%; display:block; position:absolute; left:0px; top:0px; z-index:100}
+	.register-trademark form {width:573px; margin-top: -16px;}.register-trademark label {width:30%; float:left; text-align:center; color:#2a3242; font-size:110%; font-weight:600; padding-top:0.75em}
+		.register-trademark input[type="submit"],{width:15%; text-align:center; padding-left:0; padding-right:0; float:left; font-size:140%; margin:0;margin-left: 10px;}
+	
+
+
+/* Media Queries */
+@media all and (max-width:1100px) {	
+	.slides li {height:500px}
+	
+	.slides .copy {top:120px; text-shadow:0px 0px 5px #ffffff;
+	        filter: dropshadow(color=#ffffff, offx=1, offy=1);}
+	.slides .copy h2 {font-size:300%}
+	
+	.patent-number {top: 0px;}
+		.patent-number form {width:60%;}
+		.patent-number label {width:33%; font-size:105%;}
+		.patent-number input[type="text"] {width:45%}
+		.patent-number input[type="submit"] {width:14%}
+	
+	
+}
+@media all and (max-width:700px) {	
+	.slides li {height:350px}
+	
+	.slides .copy {top:100px;}
+	.slides .copy h2 {font-size:200%}
+	
+	.patent-number {top:225px;}
+		.patent-number form {padding:1em; width:70%;}
+		.patent-number label {display:none;}
+		.patent-number input[type="text"] {width:66%; margin:0;}
+		.patent-number input[type="submit"], .patent-number a.btn {width:25%; float:right;}
+}
+

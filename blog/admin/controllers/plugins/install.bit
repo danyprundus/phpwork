@@ -1,0 +1,18 @@
+<?php
+
+// ============================================================================
+//	VARIABLES
+// ============================================================================
+
+	$plugin = $plugins_all['PLUGIN_'.strtoupper($url['plugin'])];
+
+	// If the plugin is not installed, install it
+	if ( !$plugin->is_installed() )
+	{
+		if($plugin->install())
+			Redirect::controller('admin','plugins','config',array('plugin'=>$url['plugin']));
+	}
+
+	Redirect::controller('admin','plugins','list');
+
+?>

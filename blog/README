@@ -1,0 +1,32 @@
+====== Nibbleblog ======
+Version: v3.6
+Codename: Echo
+Release date: 23/06/2013
+
+Site: http://nibbleblog.com
+Blog: http://blog.nibbleblog.com
+Help & Support: http://forum.nibbleblog.com
+Wiki: http://wiki.nibbleblog.com
+
+===== Social =====
+* Twitter: http://twitter.com/nibbleblog
+* Facebook: http://www.facebook.com/nibbleblog
+* Google+: http://plus.google.com/114117828543306830859
+
+===== Intallation =====
+1. Unzip the downloaded file
+2. Upload all files on your hosting or local server via FTP, Shell, Cpanel, others.
+3. With your browser, go to the URL of your web. Example: www.domain.com
+4. Complete the form
+5. Done! you have installed Nibbleblog
+
+===== System Requirements =====
+* PHP v5.2 or higher
+* PHP module - DOM
+* PHP module - SimpleXML
+* Directory "content" writable by PHP
+
+===== About the author =====
+Name: Diego Najar
+E-mail: dignajar@gmail.com
+Linkedin: http://www.linkedin.com/in/dignajar

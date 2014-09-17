@@ -1,0 +1,261 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+
+
+/* Common Elements */
+body {font-size:84%; background:white; color:#646974; font-family:'Open Sans', Helvetica, sans-serif; font-weight:400; font-stretch:normal}
+a {text-decoration:none; color:#2a3242; outline:none}
+a:hover {color:#33a66f}
+.clear {clear:both}
+a, a:hover, .btn, .btn:hover, input[type="submit"], input[type="submit"]:hover {-webkit-transition:all 0.25s ease; -moz-transition:all 0.25s ease; -ms-transition:all 0.25s ease; -o-transition:all 0.25s ease; transition:all 0.25s ease}
+
+
+/* Wrapper */
+.wrapper {width:100%; padding:0; max-width:980px; margin:0 auto}
+
+
+/* Common Containers */
+header, .main-content, footer, .banner {width:100%; float:left; clear:both; background:white}
+
+
+/* Header */
+header {position:relative; z-index:2}
+	.logo {float:left; padding:2em 0}
+
+
+/* Main Navigation */
+.main-nav {float:right; position:relative; z-index:10; padding:2em 0 0}
+nav {width:100%; position:relative; z-index:10; }
+	nav ul {display:block}
+	nav li {display:inline; float:left; font-size:120%}
+	nav li a {font-weight:400; color:#646974; background:white; display:inline-block; line-height:3em; padding:0 1.25em; text-decoration:none}
+		nav li:first-child a {padding-left:0}
+		nav li:last-child a {padding-right:0}
+	nav li a:hover {color:#33a66f}
+	nav li.current a {color:#2a3242;font-weight:600}
+	nav a#pull {display:none}
+
+
+/* Page Layouts */
+.main-content {background:#f5f5f5; padding:2em 0; border-bottom:1px top white; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5}  	
+.process {padding:0 0 2em;}
+
+/* Font Styles  */
+h1, h2, h3, h4, h5, h6 {color:#2a3242; line-height:140%; margin:0 0 1em; font-weight:700}
+h1 {font-size:300%; letter-spacing:-0.02em; font-weight:800; margin:0 0 0.5em}
+	.main-content h1 {font-size:250%; line-height:125%; letter-spacing:-0.02em; font-weight:300; margin:0 0 1em}
+	h1 span {font-size:65%; padding-left:0.5em}
+h2 {font-size:200%; letter-spacing:-0.02em}
+h3 {font-size:125%; margin:0 0 0.75em}
+h4 {font-size:140%; font-weight:300; margin:0 0 1em}
+h5 {font-size:115%; margin:0}
+h6 {text-transform:uppercase; letter-spacing:0.1em; margin:0 0 2em; color:#646974; font-weight:300; font-size:90%}
+p {line-height:150%; margin:0 0 1em}
+strong {font-weight:600} 
+hr {border:0; border-bottom:1px solid #e0e0e0; margin-bottom:1em; height:1em; border-collapse:0; line-height:0; width:100%; clear:both; display:block}
+.clearall {margin:0; height:0em; line-height:0; width:100%; clear:both; display:block}
+img {max-width:100%}
+small {display:block; padding:0 0 0.5em; color:#a2a5ac}
+blockquote {background:white; padding:1em 1.5em; color:#2a3242; font-size:175%; line-height:150%; letter-spacing:-0.01em; font-weight:300; margin:1em 0; border-left:3px solid #33a66f}
+	blockquote cite {display:block; padding:1.5em 0 0; font-size:60%; line-height:125%; letter-spacing:0; font-weight:400; color:#33a66f;}
+
+
+/* Bullet & Unordered Lists */
+.main-content ul {list-style-type:disc; margin:0 1em 2em} 
+	.main-content ul li {list-style-type:disc; margin:0 0 1em}
+.main-content ol {list-style-type:decimal; margin:0 1em 2em} 
+	.main-content ol li {list-style-type:decimal; margin:0 0 1em}
+
+
+/* Button */
+.btn, input[type="submit"] {margin:0.25em 0 1em; border:0; padding:0.4em 1em; color:white; background:#33a66f; border-bottom:1px solid #288257; font-weight:700; -webkit-border-radius:4px; border-radius:4px; }	
+	.btn.right {float:right; font-size:140%; font-weight:600; padding:0.6em 1.2em}
+	.btn.large {font-size:140%; font-weight:600; padding:0.6em 1.2em;}
+	.btn.back {float:left; font-size:110%; font-weight:600; padding:0.6em 1em; background:white; border-bottom:1px solid #bbb; color:#2a3242}	
+	.btn:hover, input[type="submit"]:hover {text-decoration:none; cursor:pointer; color:white; background:#2a3242; border-color:#141820}
+.btn.right .trademark {float:right; font-size:86%; font-weight:600; }
+
+/* News Feeds */
+.news-feeds {width:49%; float:left; padding-top:2em}
+	.news-feeds article {float:left; width:45%; padding:0 5% 0 0}
+	
+
+/* Testimonial */
+.testimonial {width:49%; float:right; padding-top:2em}
+	.testimonial .image {width:20%; float:left; text-align:center}
+		.testimonial .image img {max-width:90%}
+	.testimonial .quote {float:left; width:74%; background:url(../img/blockquote.png) 0 0 no-repeat; padding-left:6%}
+	.testimonial blockquote {color:#2a3242; font-size:140%; line-height:150%; font-weight:600; padding:0 0 1em; border:0; background:0; margin:0;}
+
+
+/* Footer  */
+footer {background:white; padding:2.5em 0}
+	footer .copyright {float:left; text-align:left; }
+	footer .links {float:right; text-align:right}	
+
+
+
+
+/* --------------
+Internal Pages 
+-------------- */
+
+/* Banner */
+.banner {text-align:left; width:100%; margin:0; padding:0; position:relative; z-index:1; clear:both}
+	.banner img {position:relative; z-index:1; width:100%}
+	
+
+/* Progress */
+.progress {float:left; width:100%; margin:0 0 2em; border-left:1px solid #e0e0e0}	
+	.progress .step {float:left; width:24.85%; height:2.75em; line-height:2.75em; border-bottom:1px solid #e0e0e0; border-right:1px solid #e0e0e0; color:#aeaeae; text-align:center}
+		.progress .done {color:#33a66f; background:#f9f9f9}
+			.progress a {color:#33a66f}
+		.progress .current {color:#2a3242; font-weight:700; background:white; }
+		.progress .step b {font-size:125%; padding-left:0.25em; line-height:100%}
+	
+		
+/* Mark Progress */
+.markProgress {float:left; width:100%; margin:0 0 2em; border-left:1px solid #e0e0e0}	
+	.markProgress .step {float:left; width:16.55%; height:2.75em; line-height:2.75em; border-bottom:1px solid #e0e0e0; border-right:1px solid #e0e0e0; color:#aeaeae; text-align:center}
+		.markProgress .done {color:#33a66f; background:#f9f9f9}
+			.markProgress a {color:#33a66f}
+		.markProgress .current {color:#2a3242; font-weight:700; background:white; }
+		.markProgress .step b {font-size:125%; padding-left:0.25em; line-height:100%}
+	
+		
+/* Filter */
+.filter label {padding:0 0.5em 0 0}
+.filter select { font-size:115%}
+	
+
+/* Coupon */
+.coupon {float:left; padding:0.5em 0 0; font-size:125%}
+	.coupon label {padding:0 0.5em 0 0}
+
+	
+/* Tables */
+table {border:0; padding:0; margin:1em 0 1em; border-spacing:0; width:100%; color:#2a3242; font-size:115%; line-height:140%; text-align:left; background:white; -webkit-box-shadow:0px 0px 3px 0px rgba(0, 0, 0, 0.3); box-shadow:0px 0px 3px 0px rgba(0, 0, 0, 0.3)}
+	th, td {padding:0.6em 0.8em; vertical-align:top; border-bottom:1px solid #e0e0e0; text-align:left}
+	table tr:last-child td {border:none}
+ 	th {font-weight:700; background:#fafafa}
+tr.vat td {background:#fafafa}
+	tr.hilite td {background:#daf8ea; font-weight:400}
+	.totals th { border:0}
+	table.countries th:nth-child(1), table.countries td:nth-child(1) {text-align:center}
+	table.summary td:nth-child(1) {background:#fafafa; border-right:1px solid #e0e0e0; font-weight:400}
+	table small {display:inline;font-size:80%; padding-left:0.5em}
+	table.future-costs {background:none; -webkit-box-shadow:none; box-shadow:none; width:auto; font-size:100%}
+	table.future-costs th, table.future-costs td {padding:0.5em 2em 0.5em 0; background:none}	
+
+
+/* Form Elements*/
+input, textarea, select {font-size:100%}
+
+
+/* Register Form */
+form.register table td {vertical-align:middle}
+form.register input[type=radio], form.register input[type=checkbox] {margin-right:0.5em; width:auto}
+form.register label {font-weight:400; line-height:150%}
+
+
+/* Friends Form */
+form.friends table td {padding:1em; vertical-align:middle}
+form.friends input {width:55%}
+form.friends label {font-weight:400; line-height:150%; padding-right:0.5em}
+form.friends tr.add {font-weight:700; background:#fafafa}
+
+
+/* Columns */
+.half-column {float:left; width:50%;}
+.half-column.left {width:47.5%; padding-right:2.5%}
+.half-column.right {width:47.5%; padding-left:2.5%}
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width:1000px) {	
+	.wrapper {width:95%; padding:0 2.5%}	
+	nav li a {padding:0 0.75em}	
+	header, .main-content, footer, .news-feeds, .testimonial {width:100% }
+
+	/* News feeds */	
+	.news-feeds {border-bottom:1px solid #e5e5e5}
+	
+	/* Testimonial */
+	.testimonial {padding:2em 0 0}
+		.testimonial .quote {width:74%; padding-left:6%}
+	
+	/* Progress */
+	.progress .step {font-size:90%; height:3em; line-height:3em}
+}
+
+@media all and (max-width:768px) {	
+	.main-nav {float:left; width:100%; padding:0}
+		nav li {display:inline; float:left; font-size:115%;}
+			nav li a {line-height:1em; padding:0 0.8em 1em; text-decoration:none}
+
+	/* Buttons */
+	.btn.right {float:left;}
+
+	/* Progress */
+	.progress .step { font-size:85%; width:24.75%}
+		.progress .step b {display:none;}
+	
+	/* Coupon */
+	.coupon {float:none; display:block; padding:0 0 0.5em;}
+	
+	/* Register Form */
+	form.register table td, form.register table th {width:45%; padding:0.25em 2.5%; border:0; float:left}
+	form.register table textarea {width:90%;}
+	
+	/* Friends Form */
+	form.friends input {width:90%}
+	
+	/* Columns */
+	.half-column, .half-column.left, .half-column.right {float:none; width:100%; display:block; padding:0;}
+	
+	/* Footer  */
+	footer {padding:1em 0}
+		footer .copyright, footer .links {float:none; text-align:left; padding:0.4em 0}
+				
+}
+
+@media screen and (max-width:600px) {
+	
+	nav ul {display:block; float:left; width:100%; border-top:1px solid #e5e5e5; border-left:1px solid #e5e5e5; margin:0 0 1em}
+		nav li {width:50%; float:left; position:relative; }
+			nav li a {padding:0; line-height:2.75em; border-right:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; width:auto; display:block; text-indent:1em}
+	
+	/* Progress */
+	.progress {border:0; border-bottom:1px solid #e5e5e5; margin:0 0 1em; padding:1em 0; background:none;}
+	.progress .step {font-size:100%; width:100%; height:auto; line-height:2em; text-align:left; border:0; padding:0; background:none;}
+		.progress .step b {display:inline}
+}
+
+@media only screen and (max-width:500px) {
+	nav {border-bottom:0}
+		nav ul {display:none; height:auto; margin:0}
+		nav a#pull {display:block; background:#2a3242 url(../img/nav-icon.png) 2.5% center no-repeat; width:76%; float:left; padding:1em 12%; color:white; position:relative; clear:both; font-weight:400; letter-spacing:0.1em}
+
+	/* News feeds */	
+	.news-feeds {border-bottom:1px solid #e5e5e5}
+	.news-feeds article {width:100%; padding:0 0 1em}
+	
+	/* Register Form */
+	form.register table td, form.register table th {width:95%; padding:0.25em 2.5%;}	
+}
+
+@media only screen and (max-width:320px) {
+	nav ul {border-right:1px solid #e5e5e5}
+	nav li {display:block; float:none; width:100%}
+		nav li a {border-right:0; }
+}	
+.small_logo{max-height: 200px; max-width: 200px;}

@@ -1,0 +1,20 @@
+*, h1, h2, h3, h4, h5, h6 {color:black;}
+h1 {display: none; }
+body {font-size:80%; background:none; color:black; font-family:Helvetica, sans-serif; }
+.wrapper {max-width:100%;}
+header, .main-content, footer, .banner, .wrapper {background:none; border:0; padding:0;}
+
+
+/* HIDE */
+.main-nav, .progress, footer, .btn, hr {display:none;}
+
+
+p {line-height:125%}
+.logo {float:none; padding:0 0 2em}
+.main-content h1 {font-size:200%; font-weight:bold;}
+table {border:1px solid black; border-right:0; border-bottom:0; color:black; font-size:100%; line-height:125%; background:none}
+th, td {padding:0.5em; border-right:1px solid black; border-bottom:1px solid black;}
+.totals th {background:none; color:black; border-right:1px solid black; border-bottom:1px solid black;}
+table tr td:last-child, table tr th:last-child {text-align:right;}  
+
+
