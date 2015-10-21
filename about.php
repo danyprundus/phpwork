@@ -2,7 +2,7 @@
 <html>
 <head>
 	<?php include 'inc/head.php' ?>
-	<title>Iptica</title>
+	<title>Iptica daniel</title>
 	<meta name="description" lang="en-us" content="Iptica"/>
 	<meta name="keywords" lang="en-us" content="Iptica"/>
 </head>
@@ -17,7 +17,7 @@
 		<div class="wrapper">
 			<h1>About</h1>
 			
-			<h4>Iptica specializes in registering and renewing patents in African countries.</h4>
+			<h4>daniel.</h4>
 			
 			<p>We are managed by South African patent attorneys. We understand Africa. Over the past eight years, we have created a network of "value" agents across the continent.
                            Our mission is to offer our customers discount patent filing and renewal services throughout Africa. Filing through us is convenient: we stay "in the loop" until grant. Responses to official actions are managed centrally, ensuring a consistent approach to all your national phase patents.</p>
